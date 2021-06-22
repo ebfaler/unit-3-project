@@ -100,7 +100,7 @@ display: inline-block;
 
 
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
 font-style: italic;
 text-align: right;
 }
@@ -117,7 +117,7 @@ text-align: right;
     border: none;
 }
 
-.contact input:focus {
+.contact input:focus, #state:focus {
     background: lightyellow;
     transition: ease-in-out 3s;
 }
