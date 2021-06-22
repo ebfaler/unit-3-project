@@ -1,0 +1,204 @@
+* {
+
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    
+}
+
+/*MAIN SECTIONS*/
+
+
+body {
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+
+
+header {
+
+background:#191970;
+color: white;
+text-align: center;
+font-size: xx-large;
+
+}
+
+fieldset {
+
+    border: none;
+    
+    } 
+
+/*STYLING*/
+
+h1,h2 { 
+
+font-size: 1em;
+text-align: center;
+
+}
+
+
+.contact label, .contact input {
+
+display: block;
+height: 40px;
+
+}
+
+.preferences label, .preferences input {
+
+display: inline-block;
+
+}
+
+.form::before {
+    content:"";
+    max-width: 100%;
+    height: 4px;
+    margin-bottom: 7px;
+    background: black;
+    display:block;
+
+}
+
+.contact {
+    border-bottom:2px solid black;
+    margin-bottom: 10px;
+    border-top:2px solid black;
+    padding-top: 15px;
+    max-width: 100%;
+       
+}
+
+
+/* .intro_text {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+
+} */
+
+
+/* .intro_text::after {
+  content:"";
+  width: 100%;
+  height: 3px;
+  margin-bottom: 4px;
+  background: black;
+  display:block;
+      
+}  */
+
+
+.intro {
+    text-align: center;
+}
+
+
+input::placeholder {
+font-style: italic;
+text-align: right;
+}
+
+#zip {
+    max-width: 50%;
+}
+
+
+.contact input:nth-child(1n+1) {
+    background-color: #DCDCDC;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact input:focus {
+    background: lightyellow;
+    transition: ease-in-out 3s;
+}
+
+textarea {
+    background-color: #DCDCDC;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    
+} 
+
+textarea:focus {
+
+background: lightyellow;
+transition: ease-in-out 3s;
+
+}
+
+   
+
+button {
+ background: #6B8E23;
+ color: white;
+ font-size: large;
+ text-align:center;
+ border-radius: 5px;
+ border: none;
+ padding: 10px;
+ width: 100%;
+}
+
+.container {
+
+  background-color: lightsteelblue;
+  padding-top: 25px;
+
+}
+
+.copy {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+
+}
+
+/*MEDIA QUERIES---Tablet or Desktop*/
+
+@media (min-width: 768px) {
+
+    form {
+     width: 60%;
+     margin: auto;
+       
+    }
+  
+    .contact .flex-pair{
+
+     display: flex;
+     flex-direction: row; 
+    
+
+   
+     }
+
+    .contact input, .contact select{
+        flex-grow: 1;
+        flex-basis: 75%;
+    }
+
+    .contact label {
+      flex-grow: 1;
+      flex-basis: 25%;
+      font-size: 12px;
+      padding-top: 13px;
+    
+    }
+
+
+
+    #zip {
+        max-width: 25%;
+    }
+    
+}
+
